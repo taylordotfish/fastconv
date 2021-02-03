@@ -12,11 +12,11 @@ Usage
 
 [number\_to\_digits.py][ntd] converts an integer (stored as a big-endian binary
 integer or a Python `int`) to a sequence of base-*b* digits. Run
-`number_to_digits.py` for usage information.
+`./number_to_digits.py` for usage information.
 
 [digits\_to\_number.py][dtn] converts a sequence of base-*b* digits to an
 integer (stored as a big-endian binary integer or a Python `int`). Run
-`digits_to_number.py` for usage information.
+`./digits_to_number.py` for usage information.
 
 [ntd]: number_to_digits.py
 [dtn]: digits_to_number.py
