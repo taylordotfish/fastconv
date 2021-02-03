@@ -24,7 +24,7 @@ integer (stored as a big-endian binary integer or a Python `int`). Run
 Dependencies
 ------------
 
-Python ≥ 3.7
+* Python ≥ 3.7
 
 License
 -------
