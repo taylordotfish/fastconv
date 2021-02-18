@@ -16,9 +16,16 @@
 
 from dataclasses import dataclass
 from multiprocessing import Process, Queue
-from typing import List
 import os
 import sys
+import typing
+
+try:
+    list[int]
+except Exception:
+    List = typing.List
+else:
+    List = list
 
 # sequences of digits longer than this will be split into smaller sequences
 LEAF_TASK_DIGIT_LIMIT = 1000

@@ -16,10 +16,17 @@
 
 from dataclasses import dataclass
 from multiprocessing import JoinableQueue, Process, Queue
-from typing import List
 import math
 import os
 import sys
+import typing
+
+try:
+    list[int]
+except Exception:
+    List = typing.List
+else:
+    List = list
 
 # numbers with more digits than this will be split into smaller numbers
 LEAF_TASK_DIGIT_LIMIT = 1000
