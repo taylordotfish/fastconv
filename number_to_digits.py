@@ -31,8 +31,8 @@ DEBUG = bool(os.getenv("NUMBER_TO_DIGITS_DEBUG"))
 
 
 def get_ndigits(n: int, base: int) -> int:
-    # calculate (approx) ceil(n.bit_length() * math.log_{base}(2)), which is the
-    # minimum number of base-`base` digits required to represent `n`
+    # calculate (approx) ceil(n.bit_length() * math.log_{base}(2)), which is
+    # the minimum number of base-`base` digits required to represent `n`
     ndigits = math.ceil(n.bit_length() / math.log2(base))
 
     # (exclusive) maximum number that can be represented by `ndigits` digits
